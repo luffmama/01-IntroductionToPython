@@ -29,6 +29,8 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ########################################################################
 import rosegraphics as rg
+window = rg.TurtleWindow()
+window.delay(1)
 phil =  rg.SimpleTurtle('turtle')
 phil.pen = rg.Pen('green', 24)
 phil.speed = 15
@@ -42,4 +44,4 @@ jessica.backward(75)
 for k in range(250):
     jessica.forward(k+75)
     jessica.left(190)
-
+window.close_on_mouse_click()
