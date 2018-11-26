@@ -46,4 +46,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 window = rg.TurtleWindow()
 window.delay(20)
-geog
+fish = rg.SimpleTurtle()
+fish.pen = rg.Pen("blue", 5)
+fish.left(90)
+fish.forward(200)
+fish.pen_up()
+fish.go_to(rg.Point(100,-40))
+fish.pen_down()
+fish.pen = rg.Pen("green", 10)
+fish.backward(150)
+window.close_on_mouse_click()
